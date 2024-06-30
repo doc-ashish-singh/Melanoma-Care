@@ -56,9 +56,7 @@ features = df['filepath']
 target = df['label_bin']
 
 X_train, X_val,\
-	Y_train, Y_val = train_test_split(features, target,
-									test_size=0.15,
-									random_state=10)
+	Y_train, Y_val = train_test_split(features, target,test_size=0.15,random_state=10)
 
 X_train.shape, X_val.shape
 
