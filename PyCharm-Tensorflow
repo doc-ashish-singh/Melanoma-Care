@@ -121,10 +121,7 @@ model.compile(
 	metrics=['AUC']
 )
 
-history = model.fit(train_ds,
-					validation_data=val_ds,
-					epochs=5,
-					verbose=1)
+history = model.fit(train_ds,validation_data=val_ds,epochs=5,verbose=1)
 
 hist_df = pd.DataFrame(history.history)
 hist_df.head()
